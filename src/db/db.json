@@ -1,0 +1,39 @@
+{
+  "meals": [
+    {
+      "id": "3",
+      "title": "Bowl Of Ramen",
+      "description": "A steaming bowl of ramen, brimming with savory broth, tender noodles, and an array of flavorful toppings.",
+      "catigory": "lunch",
+      "image": "ramen.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "Bowl Of Ramen",
+      "description": "A steaming bowl of ramen, brimming with savory broth, tender noodles, and an array of flavorful toppings.",
+      "catigory": "lunch",
+      "image": "ramen.jpeg"
+    },
+    {
+      "id": "52cb",
+      "title": "grilled burger ",
+      "description": "A juicy cheeseburger with lettuce, tomato, red onion, pickles, and cheese, served on a sesame seed bun.",
+      "category": "launch",
+      "image": "http://res.cloudinary.com/dxbvwgxvf/image/upload/v1719497466/xajqiyvxjnwvaqgmx79c.jpg"
+    },
+    {
+      "id": "9a8c",
+      "title": "tomato-goat-cheese-pasta",
+      "description": "A delicious-looking creamy tomato-based pasta dish featuring perfectly cooked penne, garnished with fresh herbs and a generous sprinkling of grated cheese, creating an appetizing and savory meal.",
+      "category": "launch",
+      "image": "http://res.cloudinary.com/dxbvwgxvf/image/upload/v1719569446/uz6gmptgcmfudeymbktw.avif"
+    },
+    {
+      "id": "589a",
+      "title": "Easy Fluffy Pancakes",
+      "description": "The picture shows a stack of fluffy pancakes topped with a dollop of butter, drizzled with syrup, and garnished with fresh blueberries and raspberries on a white plate.",
+      "category": "breakfast",
+      "image": "http://res.cloudinary.com/dxbvwgxvf/image/upload/v1719570304/ggpvf2xjagax3epy6xft.jpg"
+    }
+  ]
+}

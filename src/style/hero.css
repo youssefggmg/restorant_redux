@@ -1,0 +1,21 @@
+.hero {
+    background: url(../assets/plait.jpg) no-repeat fixed center;
+    background-repeat: no-repeat;
+    height: 30em;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    object-fit: cover;
+}
+
+
+.greeting {
+    color: white;
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+}
+

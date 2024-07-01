@@ -1,0 +1,135 @@
+.title {
+    text-align: center;
+    color: white;
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #6C757D;
+    font-size: 2em;
+    margin: 0.5em 0;
+    padding: 1em 0;
+}
+
+@media (min-width: 640px) {
+    .title {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 5em;
+    }
+}
+
+.Rochester {
+    font-family: "Rochester", cursive;
+}
+
+.category-image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+@media (min-width: 640px) {
+    .category-image {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .category-image {
+        height: 60vh;
+    }
+}
+
+.latestMeals {
+    background-color: #ADB5BD;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.meal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #adb5bd;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+@media (min-width: 768px) {
+    .meal {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.mealImage {
+    object-fit: cover;
+    width: 100%;
+    height: 24vh;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .mealImage {
+        width: 11em;
+        height: 24vh;
+    }
+}
+
+hr {
+    border: 0.5vh solid #000000;
+    opacity: 1;
+}
+
+.content {
+    width: 100%;
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: 75%;
+    }
+}
+
+.category {
+    align-self: center;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.meals-show{
+    background-color: #343A40;
+    width: 86%;
+    margin: auto;
+    justify-content:space-around;
+    padding: 0 10em;
+    margin-bottom: 4em;
+}
+
+@media (min-width: 1024px) {
+    .meals-show {
+        width: 86%;
+        padding: 0 10em;
+    }
+}

@@ -1,0 +1,30 @@
+.titlee {
+    text-align: center;
+    color: white;
+    font-family: "Rochester", cursive;
+    font-size: 5em;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #6C757D;
+    margin: 0.5em 0;
+    /* padding: 1em 0; */
+}
+.lable{
+    font-family: "Rochester", cursive;
+}
+.input{
+    background-color: #6C757D;
+    border: 0px;
+    outline: none;
+    border-radius: 25px;
+}
+.bg-blue-800{
+    background-color: rgb(29 78 216) !important;
+}
+.Rochester{
+    font-family: "Rochester", cursive !important;
+}
+.errors{
+    color: red;
+    text-align: center;
+}
