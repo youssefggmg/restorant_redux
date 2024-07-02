@@ -9,6 +9,8 @@ import About from "./About.jsx"
 import Addmeal from './Addmeal.jsx';
 import "./style/globale.css"
 import MealInfo from './MealInfo.jsx';
+import { Provider } from 'react-redux';
+import {store} from './redux/store';
 
 export const MealContext = createContext({})
 
@@ -20,6 +22,7 @@ const App = () => {
     // console.log(meal);
     return (
         <>
+        <Provider store={store}>
             <MealContext.Provider value={{meal}}>
                 <Navbare />
                 <BrowserRouter>
@@ -35,6 +38,7 @@ const App = () => {
                 </BrowserRouter>
                 <Footer />
             </MealContext.Provider>
+        </Provider>
         </>
     )
 }
