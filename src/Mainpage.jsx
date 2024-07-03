@@ -5,12 +5,15 @@ import './index.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
 import { useNavigate } from 'react-router';
+import { useDispatch } from 'react-redux';
+import { setMealRed } from './redux/MealSlice';
 
 const Mainpage = ({getmeal}) => {
     const [Meal, setMeal] = useState([]); // Initialize as an array
     const [lastFiveMeals, setLastFiveMeals] = useState([]);
     const categorys = ["breakfast.jpeg", "launch.jpeg", "diner.jpeg"];
     const navegation = useNavigate() 
+    const dispatch = useDispatch()
 
     const getmeals = async (url) => {
         try {
@@ -38,11 +41,13 @@ const Mainpage = ({getmeal}) => {
         const meal= Meal.find(e=>{
             return e.id == id
         })
-        getmeal(meal)
-        navegation("/mealinfo")
+        console.log(meal);
+        dispatch(setMealRed(meal));
+        navegation("/mealinfo");
+        // getmeal(meal)
     }
     
-    console.log(Meal);
+    // console.log(Meal);
 
     return (
         <>
@@ -78,8 +83,8 @@ const Mainpage = ({getmeal}) => {
             <div className='meals-show grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 px-4'>
                 {Meal.map((meal) => {
                     return (
-                        <div>
-                        <Card key={meal.id} className='my-4 shadow-lg'>
+                        <div key={meal.id}>
+                        <Card  className='my-4 shadow-lg'>
                             <Card.Img variant="top" src={meal.image} alt='meal images' className='w-full h-40 object-cover' />
                             <Card.Body className='bg-gray-500'>
                                 <Card.Title className='text-lg font-bold'>{meal.title}</Card.Title>

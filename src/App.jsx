@@ -23,7 +23,7 @@ const App = () => {
     return (
         <>
         <Provider store={store}>
-            <MealContext.Provider value={{meal}}>
+            {/* <MealContext.Provider value={{meal}}> */}
                 <Navbare />
                 <BrowserRouter>
                     <Routes>
@@ -37,7 +37,7 @@ const App = () => {
                     </Routes>
                 </BrowserRouter>
                 <Footer />
-            </MealContext.Provider>
+            {/* </MealContext.Provider> */}
         </Provider>
         </>
     )

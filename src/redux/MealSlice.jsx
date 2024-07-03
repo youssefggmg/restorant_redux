@@ -7,12 +7,13 @@ const mealSlice = createSlice({
     name: "meal",
     initialState: initialstate,
     reducers: {
-        setMeal: (state) => {
-            state = {}
+        setMealRed: (state, action) => {
+            state.meal = action.payload
         }
     }
 })
 console.log(mealSlice);
-export const { setMeal } = mealSlice.actions
+export const { setMealRed } = mealSlice.actions
+console.log(setMealRed);
 
 export default mealSlice.reducer;
